@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+    background-color: black;
+    font-family: "Times New Roman";
+}
+.nav-spaceing {
+    margin: 5px 10px;
+}
+.container-fluid {
+    width: 98%;
+    margin: auto;
+}
+
+nav {
+    border-radius: 10px 10px 0 0;
+    border-color: white;
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+}
+
+header {
+    border-radius: 0 0 10px 10px;
+    background-image: url("https://openvoid.net/images/banner.jpg");
+    height: 130px;
+    border-color: white;
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    padding: 30px;
+}
+
+nav .btn {
+    border-color: white;
+}
