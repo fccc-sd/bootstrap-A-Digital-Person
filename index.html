@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Site</title>
+    <title>(DEV!) OpenVoid Network</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/colormod.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,25 +12,128 @@
 <body>
     <div class="vr"></div>
 
-    <nav class="container-fluid bg-secondary">
-        <ul class="nav justify-content-left">
-            <li class="nav-item">
-                <a class="nav-spaceing btn btn-primary" href="#" role="button">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-spaceing btn btn-primary" href="#" role="button">Page 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-spaceing btn btn-primary" href="#" role="button">Page 3</a>
-            </li>
-        </ul>
-    </nav>
+    <!--Navbar-->
+    <div class="d-none d-md-block">
+        <nav class="nav container-fluid justify-content-between">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                <a class="nav-link active bg-primary" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link border border-primary disabled" href="#">Report Bugs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link border border-primary" href="#">Status</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item ">
+                    <a class="nav-link border border-primary disabled" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border border-primary disabled" href="#">Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="d-none d-sm-block d-md-none">
+        <nav class="nav container-fluid justify-content-between">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                <a class="nav-link active bg-primary" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link border border-primary disabled" href="#">Report Bugs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link border border-primary" href="#">Status</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills">
+                <div class="dropdown">
+                    <button class="nav-item btn btn-outline-primary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item disabled" href="#">Register</a></li>     
+                      <li><a class="dropdown-item disabled" href="#">Log In</a></li>          
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="d-block d-sm-none">
+        <nav class="nav container-fluid justify-content-between">
+            <ul class="nav nav-pills">
+                <div class="dropdown">
+                    <button class="nav-item btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Report Bug</a></li>
+                    <li><a class="dropdown-item" href="#">Status</a></li>         
+                    </ul>
+                </div>
+            </ul>
+            <ul class="nav nav-pills">
+                <div class="dropdown">
+                    <button class="nav-item btn btn-outline-primary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item disabled" href="#">Register</a></li>     
+                      <li><a class="dropdown-item disabled" href="#">Log In</a></li>          
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
 
+    <!--Header-->
     <header class="container-fluid bg-secondary">
-        <h1 class="text-light">Random Test Site</h1>
+        <h1 class="text-light">OpenVoid Network (Dev Build)</h1>
     </header>
+
+    <div class="vr"></div>
+
+    <!--Main Content-->
+    <div class="container-md">
+        <div class="row">
+            <!--Announcements-->
+            <!--PHP Magic Here :)-->
+            <div class="col-lg-9">
+                <div class="bounding">
+                    <h3 class="text-info">Hello World</h3>
+                    <p class="text-white">This is a test announcement.</p>
+                    <p class="text-white">
+                        In the live site this will
+                        be in a database.
+                    </p>
+                </div>
+            </div>
+
+            <!--Widgets-->
+            <div class="col-lg">
+                <div class="bounding text-center">
+                    <h4 class="text-accent no-bottom-margin">Newest Members!</h4>
+                    <h6 class="text-accent no-top-margin">Welcome to OpenVoid!</h6>
+                    <p class="text-white">(Most Recent User 1)!</p>
+                    <p class="text-white">(Most Recent User 2)!</p>
+                    <p class="text-white">(Most Recent User 3)!</p>
+                    <p class="text-white">(Most Recent User 4)!</p>
+                    <p class="text-white">(Most Recent User 5)!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <!--Toast Messages-->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="sitetoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div id="sitetoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="20000">
             <div class="toast-header bg-primary text-light">
                 <strong class="me-auto">See the site in action!</strong>
                 <small>Just now!</small>
