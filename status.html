@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(DEV!) OpenVoid Network</title>
+    <title>(DEV!) Status | OpenVoid Network</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/colormod.css">
@@ -19,13 +19,13 @@
             <nav class="nav container-fluid justify-content-between">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                    <a class="nav-link active bg-primary" aria-current="page" href="#">Home</a>
+                    <a class="nav-link border border-primary" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link border border-primary disabled" href="#">Report Bugs</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link border border-primary" href="status.html">Status</a>
+                    <a class="nav-link active bg-primary" href="#">Status</a>
                     </li>
                 </ul>
                 <ul class="nav nav-pills">
@@ -42,13 +42,13 @@
             <nav class="nav container-fluid justify-content-between">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                    <a class="nav-link active bg-primary" aria-current="page" href="#">Home</a>
+                    <a class="nav-link border border-primary" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link border border-primary disabled" href="#">Report Bugs</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link border border-primary" href="status.html">Status</a>
+                    <a class="nav-link active bg-primary" href="#">Status</a>
                     </li>
                 </ul>
                 <ul class="nav nav-pills">
@@ -69,12 +69,12 @@
                 <ul class="nav nav-pills">
                     <div class="dropdown">
                         <button class="nav-item btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
+                        Status
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
                         <li><a class="dropdown-item disabled" href="#">Report Bug</a></li>
-                        <li><a class="dropdown-item" href="status.html">Status</a></li>         
+                        <li><a class="dropdown-item" href="#">Status</a></li>         
                         </ul>
                     </div>
                 </ul>
@@ -94,42 +94,71 @@
 
         <!--Header-->
         <header class="container-fluid bg-secondary">
-            <h1 class="text-light">OpenVoid Network (Dev Build)</h1>
+            <h1 class="text-light">Status (Dev Build)</h1>
         </header>
 
         <div class="vr"></div>
 
         <!--Main Content-->
         <div class="container-md">
-            <div class="row">
-                <!--Announcements-->
-                <!--PHP Magic Here :)-->
-                <div class="col-lg-9">
-                    <div class="bounding">
-                        <h3 class="text-info">Hello World</h3>
-                        <p class="text-white">
-                            Greetings!
-                        </p>
+            <div class="bounding">
+                <h2 class="text-white nav-item">Live Server Status (Layout)</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="bounding2">
+                            <h3><i class="status-online bi bi-check2-square"></i><strong class="text-info">Server 1</strong></h3>
+                            <p class="text-white no-bottom-margin">Server 1 description.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bounding2">
+                            <h3><i class="status-offline bi bi-exclamation-square"></i></i><strong class="text-info">Server 2</strong></h3>
+                            <p class="text-white no-bottom-margin">Server 2 description.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bounding2">
+                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Server 3</strong></h3>
+                            <p class="text-white no-bottom-margin">Server 3 description.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="row justify-content-center bounding2">
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-online bi bi-check2-square"></i>Online</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-offline bi bi-exclamation-square"></i>Offline</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-other bi bi-info-square"></i>Other (Check below)</p>
+                    </div>
+                </div>
+            </div>
 
-                <!--Widgets-->
-                <div class="col-lg">
-                    <div class="bounding text-center">
-                        <h4 class="text-accent no-bottom-margin">Newest Members!</h4>
-                        <h6 class="text-accent no-top-margin">Welcome to OpenVoid!</h6>
-                        <p class="text-white">(Most Recent User 1)!</p>
-                        <p class="text-white">(Most Recent User 2)!</p>
-                        <p class="text-white">(Most Recent User 3)!</p>
-                        <p class="text-white">(Most Recent User 4)!</p>
-                        <p class="text-white">(Most Recent User 5)!</p>
+            <div class="vr"></div>
 
+            <div class="bounding">
+                <h2 class="text-white nav-item no-bottom-margin">Insident History</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bounding2">
+                            <h3><i class="status-offline bi bi-exclamation-square"></i><strong class="text-info">Server 2 Outage</strong></h3>
+                            <p class="text-white no-bottom-margin">Error report/information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bounding2">
+                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Server 3 Maintance</strong></h3>
+                            <p class="text-white no-bottom-margin">Status report/information</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!--Footer-->
     <footer class="container-fluid bg-secondary">
         <div class="row justify-content-center">
