@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(DEV!) Status | OpenVoid Network</title>
+    <title>Status | OpenVoid Network</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/colormod.css">
@@ -94,8 +94,8 @@
         </div>
 
         <!--Header-->
-        <header class="container-fluid bg-secondary">
-            <h1 class="text-light">Status (Dev Build)</h1>
+        <header class="container-fluid">
+            <h1 class="text-light">Server Status - OpenVoid Network</h1>
         </header>
 
         <div class="vr"></div>
@@ -103,24 +103,18 @@
         <!--Main Content-->
         <div class="container-md">
             <div class="bounding">
-                <h2 class="text-white nav-item">Live Server Status (Layout)</h2>
-                <div class="row">
+                <h2 class="text-white nav-item">Server Status</h2>
+                <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class="bounding2">
-                            <h3><i class="status-online bi bi-check2-square"></i><strong class="text-info">Server 1</strong></h3>
-                            <p class="text-white no-bottom-margin">Server 1 description.</p>
+                            <h3><i class="status-online bi bi-check2-square"></i><strong class="text-info">Website</strong></h3>
+                            <p class="text-white no-bottom-margin">All web pages.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="bounding2">
-                            <h3><i class="status-offline bi bi-exclamation-square"></i></i><strong class="text-info">Server 2</strong></h3>
-                            <p class="text-white no-bottom-margin">Server 2 description.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="bounding2">
-                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Server 3</strong></h3>
-                            <p class="text-white no-bottom-margin">Server 3 description.</p>
+                            <h3><i class="status-other bi bi-info-square"></i></i><strong class="text-info">Accounts</strong></h3>
+                            <p class="text-white no-bottom-margin">Accounts storage.</p>
                         </div>
                     </div>
                 </div>
@@ -144,16 +138,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bounding2">
-                            <h3><i class="status-offline bi bi-exclamation-square"></i><strong class="text-info">Server 2 Outage</strong></h3>
-                            <p class="text-white no-bottom-margin">Error report/information</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="bounding2">
-                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Server 3 Maintance</strong></h3>
-                            <p class="text-white no-bottom-margin">Status report/information</p>
+                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Accounts not aviable.</strong></h3>
+                            <p class="text-white no-bottom-margin">Account system is currently not avaible and is being worked on.</p>
                         </div>
                     </div>
                 </div>
@@ -162,20 +148,26 @@
     </div>
     <!--Footer-->
     <footer class="container-fluid bg-secondary">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 text-center">
-                <ul class="linklist">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="termsofservice.html">Terms Of Service</a></li>
-                </ul>
+        <div class="d-none d-sm-block">
+            <div class="row justify-content-center text-center">
+                <div class="col-4">
+                    <p class="no-bottom-margin"><a href="about.html">About</a></p>
+                    <p class="no-bottom-margin"><a href="privacy.html">Privacy Policy</a></p>
+                    <p><a href="termsofservice.html">Terms Of Service</a></p>
+                </div>
+                <div class="col-4">
+                    <p class="no-bottom-margin"><br></p>
+                    <p class="no-bottom-margin"><br></p>
+                    <p><a href="#">To The Surface</a></p>
+                </div>
             </div>
-            <div class="col-lg-4 text-center">
-                <ul class="linklist">
-                    <li class="d-none d-md-block"><br></li>
-                    <li class="d-none d-md-block"><br></li>
-                    <li><a href="#">To The Surface</a></li>
-                </ul>
+        </div>
+        <div class="d-block d-sm-none">
+            <div class="text-center">
+                <p class="no-bottom-margin"><a href="about.html">About</a></p>
+                <p class="no-bottom-margin"><a href="privacy.html">Privacy Policy</a></p>
+                <p class="no-bottom-margin"><a href="termsofservice.html">Terms Of Service</a></p>
+                <p><a href="#">To The Surface</a></p>
             </div>
         </div>
     </footer>
