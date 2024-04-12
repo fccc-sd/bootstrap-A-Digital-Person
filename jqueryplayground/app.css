@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: lightgray;
+}
