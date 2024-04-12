@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenVoid Network</title>
+    <title>Status | OpenVoid Network</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/colormod.css">
@@ -20,13 +20,13 @@
             <nav class="nav container-fluid justify-content-between">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                    <a class="nav-link border border-primary bg-primary" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link border border-primary" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link border border-primary" href="report.html">Report Bugs</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link border border-primary" href="status.html">Status</a>
+                    <a class="nav-link border border-primary bg-primary" href="status.html">Status</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link border border-primary" href="jqueryplayground/index.html">Jquery Playground</a>
@@ -46,13 +46,13 @@
             <nav class="nav container-fluid justify-content-between">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                    <a class="nav-link border border-primary bg-primary" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link border border-primary" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link border border-primary" href="report.html">Report Bugs</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link border border-primary" href="status.html">Status</a>
+                    <a class="nav-link border border-primary bg-primary" href="status.html">Status</a>
                     </li>
                 </ul>
                 <!--<ul class="nav nav-pills">
@@ -73,7 +73,7 @@
                 <ul class="nav nav-pills">
                     <div class="dropdown">
                         <button class="nav-item btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
+                        Status
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="index.html">Home</a></li>
@@ -98,62 +98,57 @@
 
         <!--Header-->
         <header class="container-fluid">
-            <h1 class="text-light">Home - OpenVoid Network</h1>
+            <h1 class="text-light">Server Status - OpenVoid Network</h1>
         </header>
 
         <div class="vr"></div>
 
         <!--Main Content-->
         <div class="container-md">
-            <div class="row">
-                <!--Announcements-->
-                <div class="col-lg-9">
-                    <div class="bounding">
-                        <h3 class="text-info">New Release: Last Time Out!</h3>
-                        <img class="img-fluid border border-light" src="images/games/lasttimeout/title.png" alt="Last Time Out Title Screen">
-                        <p class="text-white">
-                            Get ready to jump, fall, and glide. Last Time Out is a platformer with 3 worlds with 10 levels in each.
-                        </p>
-                        <img class="img-fluid border border-light" src="images/games/lasttimeout/game.png" alt="Last Time Out Level">
-                        <p class="text-white">
-                            Ready to escape? <a href="https://www.greenfoot.org/scenarios/30382">Try the game now!</a>
-                        </p>
+            <div class="bounding">
+                <h2 class="text-white nav-item">Server Status</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="bounding2">
+                            <h3><i class="status-online bi bi-check2-square"></i><strong class="text-info">Website</strong></h3>
+                            <p class="text-white no-bottom-margin">All web pages.</p>
+                        </div>
                     </div>
-                    <div class="bounding">
-                        <h3 class="text-info">New Release: Block Fall!</h3>
-                        <img class="img-fluid border border-light" src="images/games/blockfall/game.png" alt="Block Fall Gameplay">
-                        <p class="text-white">
-                            Going down! Fall as fast as possible, collect many coins, and don't touch the sky.
-                        </p>
-                            <a href="https://www.greenfoot.org/scenarios/30133">Try the game now!</a>
-                        </p>
-                    </div>
-                    <div class="bounding">
-                        <h3 class="text-info">New Release: Just Another Pong Game!</h3>
-                        <img class="img-fluid border border-light" src="images/games/pong/game.png" alt="Just Another Pong Game Gameplay">
-                        <p class="text-white">
-                            Simply another pong game. Customize the paddles and background color with 10 defferent choices. Don't forget to collect the hidden rewards.
-                        </p>
-                        <p class="text-white">
-                            <a href="https://www.greenfoot.org/scenarios/30108">Try the game now!</a>
-                        </p>
+                    <div class="col-lg-4">
+                        <div class="bounding2">
+                            <h3><i class="status-other bi bi-info-square"></i></i><strong class="text-info">Accounts</strong></h3>
+                            <p class="text-white no-bottom-margin">Accounts storage.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="row justify-content-center bounding2">
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-online bi bi-check2-square"></i>Online</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-offline bi bi-exclamation-square"></i>Offline</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <p class="text-white no-bottom-margin"><i class="status-other bi bi-info-square"></i>Other (Check below)</p>
+                    </div>
+                </div>
+            </div>
 
-                <!--Widgets-->
-                <div class="col-lg">
-                    <div class="bounding text-center">
-                        <h4 class="text-accent">Projects</h4>
-                        <p class="text-white no-bottom-margin"><a href="https://www.greenfoot.org/scenarios/30382" target="_blank">Last Time Out</a></p>
-                        <p class="text-white no-bottom-margin"><a href="https://www.greenfoot.org/scenarios/30133" target="_blank">Block Fall</a></p>
-                        <p class="text-white no-bottom-margin"><a href="https://www.greenfoot.org/scenarios/30108" target="_blank">Just Another Pong Game</a></p>
-                        <p class="text-white"><a href="https://openvoid.net" target="_blank">Project Site</a></p>
+            <div class="vr"></div>
+
+            <div class="bounding">
+                <h2 class="text-white nav-item no-bottom-margin">Insident History</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bounding2">
+                            <h3><i class="status-other bi bi-info-square"></i><strong class="text-info">Accounts not aviable.</strong></h3>
+                            <p class="text-white no-bottom-margin">Account system is currently not avaible and is being worked on.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!--Footer-->
     <footer class="container-fluid bg-secondary">
         <div class="d-none d-sm-block">
@@ -180,19 +175,6 @@
             </div>
         </div>
     </footer>
-
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="sitetoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000">
-            <div class="toast-header bg-primary text-light">
-                <strong class="me-auto">Want to see some jquery!</strong>
-                <small>Just now!</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body bg-secondary text-light">
-                Visit my <a class="link-light" href="jqueryplayground/index.html" target="_blank">jquery playground</a>
-            </div>
-        </div>
-    </div>
 
     <!--Scripts-->
     <script src="js/bootstrap.bundle.js"></script>
